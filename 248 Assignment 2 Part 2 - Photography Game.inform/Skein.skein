@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-66"/>
+  <activeNode nodeId="node-180"/>
   <item nodeId="node-1">
     <command xml:space="preserve">248 Assignment 2 Part 2 - Photography Game</command>
-    <result xml:space="preserve">248 Assignment 2 Part 2 - Photography Game&#x000A;An Interactive Fiction by Bjarke&#x000A;Release 1 / Serial number 210506 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;One pair of shoes. Good as new.&#x000A;&#x000A;A jacket hangs on the coathanger. It's his, you'd recognize it anywhere.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">248 Assignment 2 Part 2 - Photography Game&#x000A;An Interactive Fiction by Bjarke&#x000A;Release 1 / Serial number 210509 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;One pair of shoes. Good as new.&#x000A;&#x000A;A jacket hangs on the coathanger. It's his, you'd recognize it anywhere.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-2"/>
-      <child nodeId="node-9"/>
-      <child nodeId="node-13"/>
-      <child nodeId="node-15"/>
-      <child nodeId="node-17"/>
-      <child nodeId="node-29"/>
-      <child nodeId="node-30"/>
+      <child nodeId="node-12"/>
+      <child nodeId="node-16"/>
+      <child nodeId="node-18"/>
+      <child nodeId="node-20"/>
       <child nodeId="node-32"/>
-      <child nodeId="node-37"/>
-      <child nodeId="node-47"/>
+      <child nodeId="node-42"/>
+      <child nodeId="node-44"/>
+      <child nodeId="node-46"/>
       <child nodeId="node-50"/>
-      <child nodeId="node-58"/>
-      <child nodeId="node-65"/>
+      <child nodeId="node-61"/>
+      <child nodeId="node-69"/>
+      <child nodeId="node-71"/>
+      <child nodeId="node-84"/>
+      <child nodeId="node-103"/>
+      <child nodeId="node-148"/>
+      <child nodeId="node-162"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -32,7 +36,7 @@
       <child nodeId="node-3"/>
       <child nodeId="node-4"/>
       <child nodeId="node-7"/>
-      <child nodeId="node-34"/>
+      <child nodeId="node-9"/>
     </children>
   </item>
   <item nodeId="node-3">
@@ -80,6 +84,219 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-9">
+    <command xml:space="preserve">touch camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-10"/>
+    </children>
+  </item>
+  <item nodeId="node-10">
+    <command xml:space="preserve">touch camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-11"/>
+    </children>
+  </item>
+  <item nodeId="node-11">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a camera&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-12">
+    <command xml:space="preserve">photograph shelves</command>
+    <result xml:space="preserve">You need a camera to photograph anything.&#x000A;&#x000A;*click*&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-13"/>
+    </children>
+  </item>
+  <item nodeId="node-13">
+    <command xml:space="preserve">take camera</command>
+    <result xml:space="preserve">It feels heavier than you imagine. As if there are more things inside it than it has room for.&#x000A;&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-14"/>
+    </children>
+  </item>
+  <item nodeId="node-14">
+    <command xml:space="preserve">photograph shelves</command>
+    <result xml:space="preserve">*click*&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-15"/>
+    </children>
+  </item>
+  <item nodeId="node-15">
+    <command xml:space="preserve">photograph books</command>
+    <result xml:space="preserve">*click*&#x000A;You get a great shot of the books.&#x000A;&#x000A;*click*&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-16">
+    <command xml:space="preserve">look picture</command>
+    <result xml:space="preserve">You see nothing special about the picture.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-17"/>
+    </children>
+  </item>
+  <item nodeId="node-17">
+    <command xml:space="preserve">examine picture</command>
+    <result xml:space="preserve">You see nothing special about the picture.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-18">
+    <command xml:space="preserve">look at picture</command>
+    <result xml:space="preserve">It is a picture of your friend, Frank. You don't remember taking this.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-19"/>
+    </children>
+  </item>
+  <item nodeId="node-19">
+    <command xml:space="preserve">examine picture</command>
+    <result xml:space="preserve">It is a picture of your friend, Frank. You don't remember taking this.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-20">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-21"/>
+    </children>
+  </item>
+  <item nodeId="node-21">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Living Room&#x000A;The most prominent element in the living room was always the old dining table&#x000A;&#x000A;You used to remember the story of how he got it. It was something to do with a misunderstanding. And a mistyped phone number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-22"/>
+    </children>
+  </item>
+  <item nodeId="node-22">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Kitchen&#x000A;A kitchen, just big enough for another person to squeeze by when one is cooking.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-23"/>
+    </children>
+  </item>
+  <item nodeId="node-23">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Living Room&#x000A;The most prominent element in the living room was always the old dining table&#x000A;&#x000A;You used to remember the story of how he got it. It was something to do with a misunderstanding. And a mistyped phone number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-24"/>
+    </children>
+  </item>
+  <item nodeId="node-24">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-25"/>
+    </children>
+  </item>
+  <item nodeId="node-25">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;An old, dusty camera lies on the ground.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-26"/>
+    </children>
+  </item>
+  <item nodeId="node-26">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">Hallway&#x000A;a short hallway, just big enough for two doors.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-27"/>
+    </children>
+  </item>
+  <item nodeId="node-27">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">bedroom&#x000A;You never went in here much.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-28"/>
+    </children>
+  </item>
+  <item nodeId="node-28">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Hallway&#x000A;a short hallway, just big enough for two doors.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-29"/>
+    </children>
+  </item>
+  <item nodeId="node-29">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Guest Room&#x000A;The bed was always mildly uncomfortable. But you could never get yourself to tell him.&#x000A;&#x000A;A picture is stuck in the corner.&#x000A;&#x000A;You can also see a book and Shelves here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-30"/>
+    </children>
+  </item>
+  <item nodeId="node-30">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Hallway&#x000A;a short hallway, just big enough for two doors.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-31"/>
+    </children>
+  </item>
+  <item nodeId="node-31">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;An old, dusty camera lies on the ground.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-32">
+    <command xml:space="preserve">touch camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-33"/>
+      <child nodeId="node-39"/>
+      <child nodeId="node-40"/>
+    </children>
+  </item>
+  <item nodeId="node-33">
+    <command xml:space="preserve">touch camera</command>
+    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;One pair of shoes. Good as new.&#x000A;&#x000A;A jacket hangs on the coathanger. It's his, you'd recognize it anywhere.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-34"/>
+      <child nodeId="node-36"/>
+    </children>
+  </item>
   <item nodeId="node-34">
     <command xml:space="preserve">touch camera</command>
     <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;&gt;</result>
@@ -91,210 +308,58 @@
   </item>
   <item nodeId="node-35">
     <command xml:space="preserve">touch camera</command>
-    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
-    <children>
-      <child nodeId="node-36"/>
-    </children>
   </item>
   <item nodeId="node-36">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a camera&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-9">
-    <command xml:space="preserve">photograph shelves</command>
-    <result xml:space="preserve">You need a camera to photograph anything.&#x000A;&#x000A;*click*&#x000A;&gt;</result>
+    <command xml:space="preserve">photograph shoerack</command>
+    <result xml:space="preserve">*click*&#x000A;the shoerack is photographed. The camera whirs.&#x000A;&#x000A;the camera smells like shoeshine&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-10"/>
+      <child nodeId="node-37"/>
     </children>
   </item>
-  <item nodeId="node-10">
-    <command xml:space="preserve">take camera</command>
-    <result xml:space="preserve">It feels heavier than you imagine. As if there are more things inside it than it has room for.&#x000A;&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-11"/>
-    </children>
-  </item>
-  <item nodeId="node-11">
-    <command xml:space="preserve">photograph shelves</command>
-    <result xml:space="preserve">*click*&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-12"/>
-    </children>
-  </item>
-  <item nodeId="node-12">
-    <command xml:space="preserve">photograph books</command>
-    <result xml:space="preserve">*click*&#x000A;You get a great shot of the books.&#x000A;&#x000A;*click*&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-13">
-    <command xml:space="preserve">look picture</command>
-    <result xml:space="preserve">You see nothing special about the picture.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-14"/>
-    </children>
-  </item>
-  <item nodeId="node-14">
-    <command xml:space="preserve">examine picture</command>
-    <result xml:space="preserve">You see nothing special about the picture.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-15">
-    <command xml:space="preserve">look at picture</command>
-    <result xml:space="preserve">It is a picture of your friend, Frank. You don't remember taking this.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-16"/>
-    </children>
-  </item>
-  <item nodeId="node-16">
-    <command xml:space="preserve">examine picture</command>
-    <result xml:space="preserve">It is a picture of your friend, Frank. You don't remember taking this.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-17">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-18"/>
-    </children>
-  </item>
-  <item nodeId="node-18">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Living Room&#x000A;The most prominent element in the living room was always the old dining table&#x000A;&#x000A;You used to remember the story of how he got it. It was something to do with a misunderstanding. And a mistyped phone number.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-19"/>
-    </children>
-  </item>
-  <item nodeId="node-19">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">Kitchen&#x000A;A kitchen, just big enough for another person to squeeze by when one is cooking.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-20"/>
-    </children>
-  </item>
-  <item nodeId="node-20">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Living Room&#x000A;The most prominent element in the living room was always the old dining table&#x000A;&#x000A;You used to remember the story of how he got it. It was something to do with a misunderstanding. And a mistyped phone number.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-21"/>
-    </children>
-  </item>
-  <item nodeId="node-21">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-22"/>
-    </children>
-  </item>
-  <item nodeId="node-22">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;An old, dusty camera lies on the ground.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-23"/>
-    </children>
-  </item>
-  <item nodeId="node-23">
-    <command xml:space="preserve">up</command>
-    <result xml:space="preserve">Hallway&#x000A;a short hallway, just big enough for two doors.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-24"/>
-    </children>
-  </item>
-  <item nodeId="node-24">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">bedroom&#x000A;You never went in here much.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-25"/>
-    </children>
-  </item>
-  <item nodeId="node-25">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Hallway&#x000A;a short hallway, just big enough for two doors.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-26"/>
-    </children>
-  </item>
-  <item nodeId="node-26">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Guest Room&#x000A;The bed was always mildly uncomfortable. But you could never get yourself to tell him.&#x000A;&#x000A;A picture is stuck in the corner.&#x000A;&#x000A;You can also see a book and Shelves here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-27"/>
-    </children>
-  </item>
-  <item nodeId="node-27">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">Hallway&#x000A;a short hallway, just big enough for two doors.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-28"/>
-    </children>
-  </item>
-  <item nodeId="node-28">
-    <command xml:space="preserve">down</command>
-    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;An old, dusty camera lies on the ground.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-29">
+  <item nodeId="node-37">
     <command xml:space="preserve">touch camera</command>
-    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;You can also see memory of a shoerack here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-38"/>
+    </children>
+  </item>
+  <item nodeId="node-38">
+    <command xml:space="preserve">examine memory</command>
+    <result xml:space="preserve">"Oh, you still got those?" His voice is hollow, but warm. "Yeah," I shrug. I had those old boots for another two years. He puts his shoes on the rack and walks into the living room. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-39">
+    <command xml:space="preserve">photograph room</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-40">
+    <command xml:space="preserve">photograph picture</command>
+    <result xml:space="preserve">you have no hands with which to use an object you are inside.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-41"/>
-      <child nodeId="node-44"/>
-      <child nodeId="node-45"/>
     </children>
   </item>
   <item nodeId="node-41">
     <command xml:space="preserve">touch camera</command>
     <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
-    <children>
-      <child nodeId="node-42"/>
-    </children>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-42">
-    <command xml:space="preserve">touch camera</command>
-    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">move to inside the camera</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -302,215 +367,180 @@
     </children>
   </item>
   <item nodeId="node-43">
-    <command xml:space="preserve">touch camera</command>
-    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-44">
-    <command xml:space="preserve">photograph room</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-45">
-    <command xml:space="preserve">photograph picture</command>
-    <result xml:space="preserve">you have no hands with which to use an object you are inside.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
-    <children>
-      <child nodeId="node-46"/>
-    </children>
-  </item>
-  <item nodeId="node-46">
-    <command xml:space="preserve">touch camera</command>
-    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-30">
-    <command xml:space="preserve">move to inside the camera</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-31"/>
-    </children>
-  </item>
-  <item nodeId="node-31">
     <command xml:space="preserve">touch the camera</command>
     <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. There is no body.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-32">
+  <item nodeId="node-44">
     <command xml:space="preserve">touch the camera</command>
     <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
-      <child nodeId="node-33"/>
+      <child nodeId="node-45"/>
     </children>
   </item>
-  <item nodeId="node-33">
+  <item nodeId="node-45">
     <command xml:space="preserve">touch the camera</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
   </item>
-  <item nodeId="node-37">
+  <item nodeId="node-46">
     <command xml:space="preserve">drop camera</command>
     <result xml:space="preserve">You're not letting go. It feels almost sewn onto your fingers.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
-      <child nodeId="node-38"/>
+      <child nodeId="node-47"/>
     </children>
   </item>
-  <item nodeId="node-38">
+  <item nodeId="node-47">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:&#x000A;  a camera&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-39"/>
-    </children>
-  </item>
-  <item nodeId="node-39">
-    <command xml:space="preserve">touch camera</command>
-    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-40"/>
-    </children>
-  </item>
-  <item nodeId="node-40">
-    <command xml:space="preserve">touch camera</command>
-    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-  </item>
-  <item nodeId="node-47">
-    <command xml:space="preserve">photograph shoerack</command>
-    <result xml:space="preserve">*click*&#x000A;the shoerack is photographed. The camera whirs.&#x000A;&#x000A;the camera smells like shoeshine&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
       <child nodeId="node-48"/>
-      <child nodeId="node-62"/>
     </children>
   </item>
   <item nodeId="node-48">
     <command xml:space="preserve">touch camera</command>
-    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;You can also see memory of a shoerack here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-49"/>
-      <child nodeId="node-60"/>
-      <child nodeId="node-61"/>
     </children>
   </item>
   <item nodeId="node-49">
+    <command xml:space="preserve">touch camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-50">
+    <command xml:space="preserve">photograph shoerack</command>
+    <result xml:space="preserve">*click*&#x000A;the shoerack is photographed. The camera whirs.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-51"/>
+      <child nodeId="node-55"/>
+      <child nodeId="node-100"/>
+    </children>
+  </item>
+  <item nodeId="node-51">
+    <command xml:space="preserve">touch camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless. As all good stories, this one has a beginning, a middle, and an end.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;"You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-52"/>
+      <child nodeId="node-53"/>
+      <child nodeId="node-54"/>
+      <child nodeId="node-76"/>
+    </children>
+  </item>
+  <item nodeId="node-52">
     <command xml:space="preserve">photograph picture</command>
     <result xml:space="preserve">you have no hands with which to use an object you are inside. Even the sentence refuses to make sense.&#x000A;&#x000A;*click*&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-60">
+  <item nodeId="node-53">
     <command xml:space="preserve">examine memory</command>
     <result xml:space="preserve">"You still got those?" His voice is hollow, but warm. "Yeah," I shrug. I had those old boots for another two years.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-61">
+  <item nodeId="node-54">
     <command xml:space="preserve">take memory</command>
     <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-62">
+  <item nodeId="node-76">
+    <command xml:space="preserve">look at picture</command>
+    <result xml:space="preserve">You see nothing special about the empty picture.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-77"/>
+      <child nodeId="node-80"/>
+    </children>
+  </item>
+  <item nodeId="node-77">
+    <command xml:space="preserve">huh</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-78"/>
+    </children>
+  </item>
+  <item nodeId="node-78">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;We had our fights, sure. It's hazy, now, to even remember what they were about. I remember throwing a shoe, once.&#x000A;&#x000A;"You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-79"/>
+    </children>
+  </item>
+  <item nodeId="node-79">
+    <command xml:space="preserve">ok</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-80">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;We had our fights, sure. It's hazy, now, to even remember what they were about. I remember throwing a shoe, once.&#x000A;&#x000A;"You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-81"/>
+    </children>
+  </item>
+  <item nodeId="node-81">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-82"/>
+    </children>
+  </item>
+  <item nodeId="node-82">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-83"/>
+    </children>
+  </item>
+  <item nodeId="node-83">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;"You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together.&#x000A;&#x000A;But before we knew it, we graduated. Together.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-55">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Living Room&#x000A;The most prominent element in the living room was always the old dining table&#x000A;&#x000A;You used to remember the story of how he got it. It was something to do with a misunderstanding. And a mistyped phone number.&#x000A;&#x000A;A picture is stuck in the corner.&#x000A;&#x000A;You can also see a book and Shelves here.&#x000A;&#x000A;the camera smells like shoeshine&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-63"/>
-    </children>
-  </item>
-  <item nodeId="node-63">
-    <command xml:space="preserve">touch camera</command>
-    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;You can also see memory of a shoerack here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-64"/>
-    </children>
-  </item>
-  <item nodeId="node-64">
-    <command xml:space="preserve">examine memory</command>
-    <result xml:space="preserve">"Oh, you still got those?" His voice is hollow, but warm. "Yeah," I shrug. I had those old boots for another two years. He puts his shoes on the rack and walks into the living room. &#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
-  </item>
-  <item nodeId="node-50">
-    <command xml:space="preserve">photograph camera</command>
-    <result xml:space="preserve">that makes no sense.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-51"/>
-    </children>
-  </item>
-  <item nodeId="node-51">
-    <command xml:space="preserve">touch camera</command>
-    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-52"/>
-    </children>
-  </item>
-  <item nodeId="node-52">
-    <command xml:space="preserve">photograph picture</command>
-    <result xml:space="preserve">you have no hands with which to use an object you are inside. Even the sentence refuses to make sense.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-53"/>
-    </children>
-  </item>
-  <item nodeId="node-53">
-    <command xml:space="preserve">touch camera</command>
-    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;One pair of shoes. Good as new.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
-      <child nodeId="node-54"/>
-    </children>
-  </item>
-  <item nodeId="node-54">
-    <command xml:space="preserve">photograph shoerack</command>
-    <result xml:space="preserve">*click*&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
-    <children>
-      <child nodeId="node-55"/>
-    </children>
-  </item>
-  <item nodeId="node-55">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
-    <children>
       <child nodeId="node-56"/>
+      <child nodeId="node-58"/>
     </children>
   </item>
   <item nodeId="node-56">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Living Room&#x000A;The most prominent element in the living room was always the old dining table&#x000A;&#x000A;You used to remember the story of how he got it. It was something to do with a misunderstanding. And a mistyped phone number.&#x000A;&#x000A;A picture is stuck in the corner.&#x000A;&#x000A;You can also see a book and Shelves here.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">touch camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;You can also see memory of a shoerack here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -518,14 +548,14 @@
     </children>
   </item>
   <item nodeId="node-57">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;One pair of shoes. Good as new.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">examine memory</command>
+    <result xml:space="preserve">"Oh, you still got those?" His voice is hollow, but warm. "Yeah," I shrug. I had those old boots for another two years. He puts his shoes on the rack and walks into the living room. &#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
   </item>
   <item nodeId="node-58">
-    <command xml:space="preserve">photograph the shoerack</command>
-    <result xml:space="preserve">*click*&#x000A;the shoerack is photographed. The camera whirs.&#x000A;&#x000A;&gt;</result>
+    <command xml:space="preserve">photograph shelves</command>
+    <result xml:space="preserve">*click*&#x000A;Shelves is photographed. The camera whirs.&#x000A;&#x000A;the camera smells like shoeshine&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -534,22 +564,984 @@
   </item>
   <item nodeId="node-59">
     <command xml:space="preserve">touch camera</command>
-    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;You can also see a memory of a shoerack here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;You can also see memory of the university meetup and memory of a shoerack here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-60"/>
+    </children>
+  </item>
+  <item nodeId="node-60">
+    <command xml:space="preserve">examine memory of university meetup</command>
+    <result xml:space="preserve">We always worked together well in university. Got assigned a random group in an early semester, but sometimes luck strikes true, no?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-65">
+  <item nodeId="node-100">
+    <command xml:space="preserve">open camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless. As all good stories, this one has a beginning, a middle, and an end.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A; A scene fills the space.  A classroom. A teacher. You're sitting in the back, another 50 students or so, spread around the auditorium. It's new and too clean. The blackboard's barely been written on. &#x000A; "You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-101"/>
+      <child nodeId="node-132"/>
+    </children>
+  </item>
+  <item nodeId="node-101">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-102"/>
+    </children>
+  </item>
+  <item nodeId="node-102">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;The scene shifts. We're in a group room, walls covered in post-it notes. We're staring at our monitors, working out some problem. As we always did. &#x000A;We had our fights, sure. It's hazy, now, to even remember what they were about. I remember throwing a shoe, once. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-108"/>
+      <child nodeId="node-137"/>
+    </children>
+  </item>
+  <item nodeId="node-108">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-109"/>
+    </children>
+  </item>
+  <item nodeId="node-109">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-110"/>
+    </children>
+  </item>
+  <item nodeId="node-110">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;But before we knew it, we graduated. Together. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-111"/>
+      <child nodeId="node-120"/>
+    </children>
+  </item>
+  <item nodeId="node-111">
+    <command xml:space="preserve">close camera</command>
+    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;One pair of shoes. Good as new.&#x000A;&#x000A;A jacket hangs on the coathanger. It's his, you'd recognize it anywhere.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-112"/>
+    </children>
+  </item>
+  <item nodeId="node-112">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Living Room&#x000A;The most prominent element in the living room was always the old dining table&#x000A;&#x000A;You used to remember the story of how he got it. It was something to do with a misunderstanding. And a mistyped phone number.&#x000A;&#x000A;A picture is stuck in the corner.&#x000A;&#x000A;You can also see a book, Shelves and a project report here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-113"/>
+    </children>
+  </item>
+  <item nodeId="node-113">
+    <command xml:space="preserve">photograph project report</command>
+    <result xml:space="preserve">*click*&#x000A;the project report is photographed. The camera whirs.&#x000A;&#x000A;We had our fights, sure. It's hazy, now, to even remember what they were about. I remember throwing a shoe, once. &#x000A;"You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-114"/>
+    </children>
+  </item>
+  <item nodeId="node-114">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;One pair of shoes. Good as new.&#x000A;&#x000A;A jacket hangs on the coathanger. It's his, you'd recognize it anywhere.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-115"/>
+    </children>
+  </item>
+  <item nodeId="node-115">
     <command xml:space="preserve">photograph jacket</command>
     <result xml:space="preserve">*click*&#x000A;the jacket is photographed. The camera whirs.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-116"/>
+    </children>
+  </item>
+  <item nodeId="node-116">
+    <command xml:space="preserve">open camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless. As all good stories, this one has a beginning, a middle, and an end.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;"You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together.  I remember seeing his jacket in class earlier in the day, thinking he'd be way too flashy to be your friend. Glad you were wrong. &#x000A;But before we knew it, we graduated. Together.  We were damn ragged after staying up all night, fixing commas. But hey, we were alive. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-117"/>
+    </children>
+  </item>
+  <item nodeId="node-117">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-118"/>
+    </children>
+  </item>
+  <item nodeId="node-118">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-119"/>
+    </children>
+  </item>
+  <item nodeId="node-119">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;We had our fights, sure. It's hazy, now, to even remember what they were about. I remember throwing a shoe, once. &#x000A;"You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together.  I remember seeing his jacket in class earlier in the day, thinking he'd be way too flashy to be your friend. Glad you were wrong. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-120">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-121"/>
+    </children>
+  </item>
+  <item nodeId="node-121">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-122"/>
+    </children>
+  </item>
+  <item nodeId="node-122">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;"You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-123"/>
+    </children>
+  </item>
+  <item nodeId="node-123">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-124"/>
+    </children>
+  </item>
+  <item nodeId="node-124">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-125"/>
+    </children>
+  </item>
+  <item nodeId="node-125">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;We had our fights, sure. It's hazy, now, to even remember what they were about. I remember throwing a shoe, once. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-126"/>
+    </children>
+  </item>
+  <item nodeId="node-126">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-127"/>
+    </children>
+  </item>
+  <item nodeId="node-127">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-128"/>
+    </children>
+  </item>
+  <item nodeId="node-128">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;But before we knew it, we graduated. Together. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-129"/>
+    </children>
+  </item>
+  <item nodeId="node-129">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-130"/>
+    </children>
+  </item>
+  <item nodeId="node-130">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-131"/>
+    </children>
+  </item>
+  <item nodeId="node-131">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;"You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-137">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-138"/>
+    </children>
+  </item>
+  <item nodeId="node-138">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-139"/>
+    </children>
+  </item>
+  <item nodeId="node-139">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-140"/>
+    </children>
+  </item>
+  <item nodeId="node-140">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-141"/>
+    </children>
+  </item>
+  <item nodeId="node-141">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-142"/>
+    </children>
+  </item>
+  <item nodeId="node-142">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-143"/>
+    </children>
+  </item>
+  <item nodeId="node-143">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;The scene shifts. Before we knew it, we graduated. Together. The ceremony wasn't the fun part, but we did it.  &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-144"/>
+    </children>
+  </item>
+  <item nodeId="node-144">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-145"/>
+    </children>
+  </item>
+  <item nodeId="node-145">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-146"/>
+    </children>
+  </item>
+  <item nodeId="node-146">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A; The scene shifts back.  A classroom. A teacher. You're sitting in the back, another 50 students or so, spread around the auditorium. It's new and too clean. The blackboard's barely been written on. &#x000A; "You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-147"/>
+    </children>
+  </item>
+  <item nodeId="node-147">
+    <command xml:space="preserve">p</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-132">
+    <command xml:space="preserve">look at teacher</command>
+    <result xml:space="preserve">Clara Duvan, her name was. She was a good teacher. Got us through a lot.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-133"/>
+      <child nodeId="node-136"/>
+    </children>
+  </item>
+  <item nodeId="node-133">
+    <command xml:space="preserve">examine teacher</command>
+    <result xml:space="preserve">Clara Duvan, her name was. She was a good teacher. Got us through a lot.&#x000A;&#x000A;We had our fights, sure. It's hazy, now, to even remember what they were about. I remember throwing a shoe, once. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-134"/>
+    </children>
+  </item>
+  <item nodeId="node-134">
+    <command xml:space="preserve">WHat</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-135"/>
+    </children>
+  </item>
+  <item nodeId="node-135">
+    <command xml:space="preserve">but</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-136">
+    <command xml:space="preserve">look at students</command>
+    <result xml:space="preserve">There were too many for me to know them all well. I had some friends in there though. So did Frank.&#x000A;&#x000A;We had our fights, sure. It's hazy, now, to even remember what they were about. I remember throwing a shoe, once. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-61">
+    <command xml:space="preserve">photograph camera</command>
+    <result xml:space="preserve">that makes no sense.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-62"/>
+    </children>
+  </item>
+  <item nodeId="node-62">
+    <command xml:space="preserve">touch camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-63"/>
+    </children>
+  </item>
+  <item nodeId="node-63">
+    <command xml:space="preserve">photograph picture</command>
+    <result xml:space="preserve">you have no hands with which to use an object you are inside. Even the sentence refuses to make sense.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-64"/>
+    </children>
+  </item>
+  <item nodeId="node-64">
+    <command xml:space="preserve">touch camera</command>
+    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;One pair of shoes. Good as new.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-65"/>
+    </children>
+  </item>
+  <item nodeId="node-65">
+    <command xml:space="preserve">photograph shoerack</command>
+    <result xml:space="preserve">*click*&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
       <child nodeId="node-66"/>
     </children>
   </item>
   <item nodeId="node-66">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-67"/>
+    </children>
+  </item>
+  <item nodeId="node-67">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Living Room&#x000A;The most prominent element in the living room was always the old dining table&#x000A;&#x000A;You used to remember the story of how he got it. It was something to do with a misunderstanding. And a mistyped phone number.&#x000A;&#x000A;A picture is stuck in the corner.&#x000A;&#x000A;You can also see a book and Shelves here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-68"/>
+    </children>
+  </item>
+  <item nodeId="node-68">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;One pair of shoes. Good as new.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-69">
+    <command xml:space="preserve">photograph the shoerack</command>
+    <result xml:space="preserve">*click*&#x000A;the shoerack is photographed. The camera whirs.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-70"/>
+    </children>
+  </item>
+  <item nodeId="node-70">
+    <command xml:space="preserve">touch camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;You can also see a memory of a shoerack here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-71">
+    <command xml:space="preserve">photograph jacket</command>
+    <result xml:space="preserve">*click*&#x000A;the jacket is photographed. The camera whirs.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-72"/>
+      <child nodeId="node-73"/>
+    </children>
+  </item>
+  <item nodeId="node-72">
     <command xml:space="preserve">touch camera</command>
     <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;You remember when he bought the jacket. You were in London, visiting for the first time, and he got an idea that jackets were cheaper in Britain. He was wrong, but he insisted.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-73">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Living Room&#x000A;The most prominent element in the living room was always the old dining table&#x000A;&#x000A;You used to remember the story of how he got it. It was something to do with a misunderstanding. And a mistyped phone number.&#x000A;&#x000A;A picture is stuck in the corner.&#x000A;&#x000A;You can also see a book and Shelves here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-74"/>
+    </children>
+  </item>
+  <item nodeId="node-74">
+    <command xml:space="preserve">photograph shelves</command>
+    <result xml:space="preserve">*click*&#x000A;Shelves is photographed. The camera whirs.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-75"/>
+    </children>
+  </item>
+  <item nodeId="node-75">
+    <command xml:space="preserve">touch camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;You remember when he bought the jacket. You were in London, visiting for the first time, and he got an idea that jackets were cheaper in Britain. He was wrong, but he insisted. You followed him, dutifully, shaking your head all the way. Although, you will admit, he got a pretty darn good jacket out of it.&#x000A;&#x000A;All the books. He kept all the books, the mad man. I sold mine after we were done.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-84">
+    <command xml:space="preserve">open camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless. As all good stories, this one has a beginning, a middle, and an end.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;You feel as if you can change the world as if you were to change a setting.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-85"/>
+      <child nodeId="node-86"/>
+      <child nodeId="node-164"/>
+      <child nodeId="node-170"/>
+    </children>
+  </item>
+  <item nodeId="node-85">
+    <command xml:space="preserve">open camera</command>
+    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;One pair of shoes. Good as new.&#x000A;&#x000A;A jacket hangs on the coathanger. It's his, you'd recognize it anywhere.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-86">
+    <command xml:space="preserve">close camera</command>
+    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;One pair of shoes. Good as new.&#x000A;&#x000A;A jacket hangs on the coathanger. It's his, you'd recognize it anywhere.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-87"/>
+    </children>
+  </item>
+  <item nodeId="node-87">
+    <command xml:space="preserve">photograph shoerack</command>
+    <result xml:space="preserve">*click*&#x000A;the shoerack is photographed. The camera whirs.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-88"/>
+    </children>
+  </item>
+  <item nodeId="node-88">
+    <command xml:space="preserve">open camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless. As all good stories, this one has a beginning, a middle, and an end.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;"You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-89"/>
+    </children>
+  </item>
+  <item nodeId="node-89">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-90"/>
+    </children>
+  </item>
+  <item nodeId="node-90">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;We had our fights, sure. It's hazy, now, to even remember what they were about. I remember throwing a shoe, once.&#x000A;&#x000A;"You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-91"/>
+    </children>
+  </item>
+  <item nodeId="node-91">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-92"/>
+    </children>
+  </item>
+  <item nodeId="node-92">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-93"/>
+    </children>
+  </item>
+  <item nodeId="node-93">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;"You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together.&#x000A;&#x000A;But before we knew it, we graduated. Together.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-94"/>
+    </children>
+  </item>
+  <item nodeId="node-94">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-95"/>
+    </children>
+  </item>
+  <item nodeId="node-95">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-96"/>
+    </children>
+  </item>
+  <item nodeId="node-96">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;We had our fights, sure. It's hazy, now, to even remember what they were about. I remember throwing a shoe, once.&#x000A;&#x000A;"You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-97"/>
+    </children>
+  </item>
+  <item nodeId="node-97">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-98"/>
+    </children>
+  </item>
+  <item nodeId="node-98">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-99"/>
+    </children>
+  </item>
+  <item nodeId="node-99">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;"You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together.&#x000A;&#x000A;But before we knew it, we graduated. Together.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-164">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">The Beginning&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-165"/>
+    </children>
+  </item>
+  <item nodeId="node-165">
+    <command xml:space="preserve">forwards</command>
+    <result xml:space="preserve">Middle&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-166"/>
+    </children>
+  </item>
+  <item nodeId="node-166">
+    <command xml:space="preserve">forwards</command>
+    <result xml:space="preserve">End&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-167"/>
+    </children>
+  </item>
+  <item nodeId="node-167">
+    <command xml:space="preserve">backwards</command>
+    <result xml:space="preserve">Middle&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-168"/>
+    </children>
+  </item>
+  <item nodeId="node-168">
+    <command xml:space="preserve">backwards</command>
+    <result xml:space="preserve">The Beginning&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-169"/>
+    </children>
+  </item>
+  <item nodeId="node-169">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless. As all good stories, this one has a beginning, a middle, and an end.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-170">
+    <command xml:space="preserve">change setting</command>
+    <result xml:space="preserve">The world shifts to the middle&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-171"/>
+    </children>
+  </item>
+  <item nodeId="node-171">
+    <command xml:space="preserve">close camera</command>
+    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;One pair of shoes. Good as new.&#x000A;&#x000A;A jacket hangs on the coathanger. It's his, you'd recognize it anywhere.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-172"/>
+    </children>
+  </item>
+  <item nodeId="node-172">
+    <command xml:space="preserve">p shoerack</command>
+    <result xml:space="preserve">*click*&#x000A;the shoerack is photographed. The camera whirs.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-173"/>
+    </children>
+  </item>
+  <item nodeId="node-173">
+    <command xml:space="preserve">open camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless. As all good stories, this one has a beginning, a middle, and an end.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;You feel as if you can change the world as if you were to change a setting.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-174"/>
+    </children>
+  </item>
+  <item nodeId="node-174">
+    <command xml:space="preserve">change setting</command>
+    <result xml:space="preserve">The world shifts to the end&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-175"/>
+    </children>
+  </item>
+  <item nodeId="node-175">
+    <command xml:space="preserve">change setting</command>
+    <result xml:space="preserve">The world is beginning again&#x000A; A scene fills the space.  A classroom. A teacher. You're sitting in the back, another 50 students or so, spread around the auditorium. It's new and too clean. The blackboard's barely been written on. &#x000A; "You two, you're together", the teacher said. And you were, apparently. You had never met him before, but there you were, suddenly, forced to work together. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-176"/>
+    </children>
+  </item>
+  <item nodeId="node-176">
+    <command xml:space="preserve">change setting</command>
+    <result xml:space="preserve">The world shifts to the middle&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-177"/>
+    </children>
+  </item>
+  <item nodeId="node-177">
+    <command xml:space="preserve">change setting</command>
+    <result xml:space="preserve">The world shifts to the end&#x000A;The scene shifts. You're in a group room, walls covered in post-it notes. You're both staring at our monitors, working out some problem. As you always did. &#x000A;You had your fights, sure. It's hazy, now, to even remember what they were about. You remember throwing a shoe, once. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-178"/>
+    </children>
+  </item>
+  <item nodeId="node-178">
+    <command xml:space="preserve">change setting</command>
+    <result xml:space="preserve">The world is beginning again&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-179"/>
+    </children>
+  </item>
+  <item nodeId="node-179">
+    <command xml:space="preserve">change setting</command>
+    <result xml:space="preserve">The world shifts to the middle&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-180"/>
+    </children>
+  </item>
+  <item nodeId="node-180">
+    <command xml:space="preserve">change setting</command>
+    <result xml:space="preserve">The world shifts to the end&#x000A;The scene shifts. Before you knew it, you graduated. Together. The ceremony wasn't the fun part, but you did it.  &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-103">
+    <command xml:space="preserve">photogrpah jacket</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-104"/>
+    </children>
+  </item>
+  <item nodeId="node-104">
+    <command xml:space="preserve">photograph jacket</command>
+    <result xml:space="preserve">*click*&#x000A;the jacket is photographed. The camera whirs.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-105"/>
+    </children>
+  </item>
+  <item nodeId="node-105">
+    <command xml:space="preserve">open camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless. As all good stories, this one has a beginning, a middle, and an end.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;"You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-106"/>
+    </children>
+  </item>
+  <item nodeId="node-106">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-107"/>
+    </children>
+  </item>
+  <item nodeId="node-107">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;We had our fights, sure. It's hazy, now, to even remember what they were about. &#x000A;"You two, you're together", the teacher said. And we were, apparently. I had never met him before, but there we were, suddenly, forced to work together.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-148">
+    <command xml:space="preserve">p shoerack</command>
+    <result xml:space="preserve">*click*&#x000A;the shoerack is photographed. The camera whirs.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-149"/>
+    </children>
+  </item>
+  <item nodeId="node-149">
+    <command xml:space="preserve">open camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless. As all good stories, this one has a beginning, a middle, and an end.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A; A scene fills the space.  A classroom. A teacher. You're sitting in the back, another 50 students or so, spread around the auditorium. It's new and too clean. The blackboard's barely been written on. &#x000A; "You two, you're together", the teacher said. And you were, apparently. You had never met him before, but there you were, suddenly, forced to work together. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-150"/>
+    </children>
+  </item>
+  <item nodeId="node-150">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-151"/>
+    </children>
+  </item>
+  <item nodeId="node-151">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.&#x000A;&#x000A;The scene shifts. You're in a group room, walls covered in post-it notes. You're both staring at our monitors, working out some problem. As you always did. &#x000A;You had your fights, sure. It's hazy, now, to even remember what they were about. You remember throwing a shoe, once. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-152"/>
+    </children>
+  </item>
+  <item nodeId="node-152">
+    <command xml:space="preserve">examine shoe</command>
+    <result xml:space="preserve">It was about some disagreement over a figure, or something equally stupid. You wanted it, he didn't. It got heated, and the shoe sort of fell off. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-153"/>
+    </children>
+  </item>
+  <item nodeId="node-153">
+    <command xml:space="preserve">close camera</command>
+    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;One pair of shoes. Good as new.&#x000A;&#x000A;A jacket hangs on the coathanger. It's his, you'd recognize it anywhere.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-154"/>
+    </children>
+  </item>
+  <item nodeId="node-154">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Living Room&#x000A;The most prominent element in the living room was always the old dining table&#x000A;&#x000A;You used to remember the story of how he got it. It was something to do with a misunderstanding. And a mistyped phone number.&#x000A;&#x000A;A picture is stuck in the corner.&#x000A;&#x000A;You can also see a book, Shelves and a project report here.&#x000A;&#x000A;The scene shifts. Before you knew it, you graduated. Together. The ceremony wasn't the fun part, but you did it.  &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-155"/>
+    </children>
+  </item>
+  <item nodeId="node-155">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;One pair of shoes. Good as new.&#x000A;&#x000A;A jacket hangs on the coathanger. It's his, you'd recognize it anywhere.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-156"/>
+    </children>
+  </item>
+  <item nodeId="node-156">
+    <command xml:space="preserve">open camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless. As all good stories, this one has a beginning, a middle, and an end.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-157"/>
+    </children>
+  </item>
+  <item nodeId="node-157">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A; The scene shifts back.  A classroom. A teacher. You're sitting in the back, another 50 students or so, spread around the auditorium. It's new and too clean. The blackboard's barely been written on. &#x000A; "You two, you're together", the teacher said. And you were, apparently. You had never met him before, but there you were, suddenly, forced to work together. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-158"/>
+    </children>
+  </item>
+  <item nodeId="node-158">
+    <command xml:space="preserve">close camera</command>
+    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;One pair of shoes. Good as new.&#x000A;&#x000A;A jacket hangs on the coathanger. It's his, you'd recognize it anywhere.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-159"/>
+    </children>
+  </item>
+  <item nodeId="node-159">
+    <command xml:space="preserve">open camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless. As all good stories, this one has a beginning, a middle, and an end.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;You can also see a students and a teacher here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-160"/>
+    </children>
+  </item>
+  <item nodeId="node-160">
+    <command xml:space="preserve">close camera</command>
+    <result xml:space="preserve">Entrance&#x000A;The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it.&#x000A;&#x000A;One pair of shoes. Good as new.&#x000A;&#x000A;A jacket hangs on the coathanger. It's his, you'd recognize it anywhere.&#x000A;&#x000A;The scene shifts. You're in a group room, walls covered in post-it notes. You're both staring at our monitors, working out some problem. As you always did. &#x000A;You had your fights, sure. It's hazy, now, to even remember what they were about. You remember throwing a shoe, once. &#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-161"/>
+    </children>
+  </item>
+  <item nodeId="node-161">
+    <command xml:space="preserve">open camera</command>
+    <result xml:space="preserve">Inside the Camera&#x000A;Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless. As all good stories, this one has a beginning, a middle, and an end.&#x000A;&#x000A;An empty picture floats in the space.&#x000A;&#x000A;You can also see a shoe and a post-it notes here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-162">
+    <command xml:space="preserve">go to middle</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-163"/>
+    </children>
+  </item>
+  <item nodeId="node-163">
+    <command xml:space="preserve">go to the Middle</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
