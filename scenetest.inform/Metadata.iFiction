@@ -2,11 +2,11 @@
 <ifindex version="1.0" xmlns="http://babel.ifarchive.org/protocol/iFiction/">
     <story>
         <identification>
-            <ifid>A9465838-61BF-4D9A-B6A3-56F06579EF6F</ifid>
+            <ifid>3596C71B-C349-4430-968C-0F245A2D0B49</ifid>
             <format>glulx</format>
         </identification>
         <bibliographic>
-            <title>248 Assignment 2 Part 2 - Photography Game</title>
+            <title>scenetest</title>
             <author>Bjarke</author>
             <headline>An Interactive Fiction</headline>
             <genre>Fiction</genre>

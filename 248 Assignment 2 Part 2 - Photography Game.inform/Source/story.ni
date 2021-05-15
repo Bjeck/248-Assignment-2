@@ -8,9 +8,12 @@
  - DONE[MISSING examines] memory end
  - ending
  - do something with the picture (both the empty one and the one in the camera)
+ - you can take the setting lol
+ - should prolly have scene changes be greater than? just in case.
 
 NICE TO HAVE
  - shelves and containers not saying what's in them until examined.
+ - highlighting nouns to interact with (esp. in memories)
 
 ]
 
@@ -62,7 +65,7 @@ A container called a diary is here. The diary is lockable. It is locked.
 
 Instead of examining the diary:
 	if the diary is locked:
-		say "His diary? Did he keep a diary? In any case, it's locked, so there's no way to know without a key."
+		say "His diary? Did he keep a diary? In any case, it's locked, so there's no way to know without a key.";
 	otherwise:
 		say "With slight trepidation, you open the diary. Why are you doing this? You flip through the pages. It's not super well kept. Entries every... third week or so? First entry is a couple years after school. You flip through some more, all the way to the last page. Dated... 2 months ago. [line break]
 [italic type]Excited about going to Cyprus tomorrow. Gonna be good to get away for a while. [roman type][line break]That's it. That's all it says. Shit."
@@ -84,8 +87,7 @@ There is a room called Inside the Camera. "Your vision is overtaken by dust and 
 An empty picture is here. The empty picture is fixed in place. "An empty picture floats in the space." [should I do something with this? Is this the end condition?]
 
 
-A setting is here. The setting is either beginning, middle, or end. It is beginning. "You feel as if you can change a setting, to change the time."
-[make this a property instead]
+A setting is here. The setting is fixed in place. The setting is either beginning, middle, or end. It is beginning. "You feel as if you can change a setting, to change the time."
 
 Changing is an action applying to one visible thing. Understand "change [something]" as changing. 
 
@@ -105,7 +107,13 @@ Carry out changing:
 	else if the setting is beginning:
 		now the setting is middle;
 		say "The world shifts to the middle";
-[Some sort of hint on how to do this?]
+
+The exit is south of the Entrance. "Outside the house."
+
+Instead of going to the exit:
+	say "You leave the house.";
+	end the story finally saying "Enough memories for one day." [fancy logic for what text to display here!]
+	
 
 
 [INSTEAD OF SCENES. if they don't work:
@@ -146,16 +154,6 @@ Beginning Memory Part One ends sadly when the time since Beginning Memory Part O
 Beginning Memory Part Two ends happily when the time since Beginning Memory Part Two began is 3 minutes and the setting is beginning. 
 Beginning Memory Part Three ends happily when the time since Beginning Memory Part Three began is 3 minutes and the setting is beginning. 
 Beginning Memory Part Three ends sadly when the time since Beginning Memory Part Three began is 3 minutes and the setting is not beginning. 
-[oh wait these can have more conditions? right? and then have scene end differently based on that, and then only if scene ends the right way it will transition.]
-
-[another problem is that when the player exits and reenters, it doesn't print the scene opening line, so there's no indication of where we are until we change scenes.
-This can be solved with: Every turn during the Train Stop, say "Water is sluiced out of the tank and into the engine."  And just being clever about the language]
-
-
-[OK something funky is still going on :/
-With scenery objects I think that fixes it for the player at least... ?
-]
-
 
 When Beginning Memory Part One begins:
 	if the player is in Inside the Camera:
@@ -263,7 +261,6 @@ When End Memory Part One begins:
 
 When End Memory Part Two begins:
 	say "The scene shifts. It's the fight. The Fight. The one you were bound to have eventually. 'I feel like you never talk anymore'. 'I don't know what's happening in your life'. Was that what happened? [if the diary has been photographed]He said those things, really. Yeah. Maybe he was right.[otherwise]You told him what you thought, and that was that.[end if] But there was nothing about this fight, at the time, that said that this was the end. It was just a dumb scrap. At the time."
-[shoes]
 
 When End Memory Part Three begins:
 	say "The scene shifts. You sit alone, in your room, checking Facebook. You stumble across an update from Frank. He got a new job. He didn't even tell you. [if guitar has been photographed]In another update, he shares some guitar he'd been doing. Perhaps he played the guitar more than you thought. Maybe he picked it up after.[end if]"
