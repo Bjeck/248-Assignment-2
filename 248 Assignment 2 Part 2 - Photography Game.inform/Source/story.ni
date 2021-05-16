@@ -6,9 +6,9 @@
  - DONE[?] working scene logic
  - DONE memory middle
  - DONE[MISSING examines] memory end
- - ending
+ - DONE - ending
  - do something with the picture (both the empty one and the one in the camera)
- - you can take the setting lol
+ - DONE - you can take the setting lol
  - should prolly have scene changes be greater than? just in case.
 
 NICE TO HAVE
@@ -61,12 +61,13 @@ The Hallway is up from the Entrance. "A short hallway, just big enough for two d
 
 The Bedroom is east from the hallway. "His bedroom. It's very sparse. [line break]Back west is the hallway."
 A book is here. "A book is on the nightstand." The description of the book is "some sci fi book you haven't heard of. But it's very much a thing he'd read."
-A container called a diary is here. The diary is lockable. It is locked. 
+A container called a diary is here. The diary is lockable. It is locked. The diary is either unread or read. The diary is unread.
 
 Instead of examining the diary:
 	if the diary is locked:
 		say "His diary? Did he keep a diary? In any case, it's locked, so there's no way to know without a key.";
 	otherwise:
+		now the diary is read;
 		say "With slight trepidation, you open the diary. Why are you doing this? You flip through the pages. It's not super well kept. Entries every... third week or so? First entry is a couple years after school. You flip through some more, all the way to the last page. Dated... 2 months ago. [line break]
 [italic type]Excited about going to Cyprus tomorrow. Gonna be good to get away for a while. [roman type][line break]That's it. That's all it says. Shit."
 
@@ -88,7 +89,6 @@ An empty picture is here. The empty picture is fixed in place. "An empty picture
 
 
 A setting is here. The setting is fixed in place. The setting is either beginning, middle, or end. It is beginning. "You feel as if you can change a setting, to change the time."
-
 Changing is an action applying to one visible thing. Understand "change [something]" as changing. 
 
 Check changing:
@@ -112,7 +112,11 @@ The exit is south of the Entrance. "Outside the house."
 
 Instead of going to the exit:
 	say "You leave the house.";
-	end the story finally saying "Enough memories for one day." [fancy logic for what text to display here!]
+	end the story finally saying "Enough memories for one day. You had hoped to find a concrete answer[if end access is false and middle access is false and beginning access is false], but alas, you leave empty-handed[otherwise].[end if] [line break]
+	[if the diary is read]Only clue there is 'Cyprus', which is vague and unhelpful. Especially two months late. Did something happen there? Was he planning on staying away that long? [end if]
+[if end access is true]Had you just been drifting apart naturally? [end if][if middle access is true]You still had had some good times. [end if][if beginning access is true]As you think back on it, all your good memories were from school. All that happened after...[end if][line break]
+[if end access is true and middle access is true and beginning access is true]Maybe it was best to just walk away. Leave him in peace.[end if]
+[line break]You lock the door again and head down the street, camera in hand. [if end access is true or middle access is true or beginning access is true]At least you have some memories to cling to. [end if]"
 	
 
 
@@ -124,11 +128,13 @@ Instead of going to the exit:
 A teacher is scenery. The teacher is nowhere. The description of the teacher is "Clara Duvan, her name was. She was a good teacher. Got you through a lot."
 The students are scenery. The students are nowhere. The description of the students is "There were too many for you to know them all well. You had some friends in there though. So did Frank."
 The post-it notes are scenery. The post-it notes are nowhere. The description of the post-it notes are "They were his idea, mostly. You were never that organized. You tried to follow up, but your mind was always more chaotic than his."
-A shoe is scenery. The shoe is nowhere. The description of the shoe is "It was about some disagreement over a figure, or something equally stupid. You wanted it, he didn't. It got heated, and the shoe sort of fell off."
+A shoe is scenery. The shoe is nowhere. The description of the shoe is "It was about some disagreement over a figure, or something equally stupid. You wanted it, he didn't. It got heated, and the shoe sort of... fell off."
 A restaurant is scenery. The restaurant is nowhere. The description of the restaurant is "Italian? Maybe. Mediterranean? Frank had a knack for finding places you never really got. He kept saying he got them from his phone recommendations, but you never believed him. It felt too... well picked."
 The work is scenery. The work is nowhere. The description of the work is "You got a job pretty quick after studies. Straightforward gig, really. Software engineer. Paid well. You still miss the coffee-machine from that place."
 The text messages are scenery. The text messages are nowhere. The description of the text messages is "In hindsight... maybe there were more. But he also seemed busy. Or at least, you thought he was."
 A bar is scenery. The bar is nowhere. The description of the bar is "Picked out by Frank, of course. A quiant little spot, close to our university. The prizes had gotten more expensive since we were students, but hey, now we had disposable income. For a while, at least."
+The plants are scenery. The plants are nowhere. The description of the plants is "He always did this. Bought plants and had them die on him. He was never any good at taking care of them. He did use the pots for hiding keys in, though, once."
+The ceremony i scenery. The ceremony is nowhere. The description of the ceremony is "It's a blur, most of the other students are just washed out faces. Someone did a speech, and you remembering snickering about its hopefulness with Frank afterwards."
 
 
 [MEMORY SCENES]
@@ -159,7 +165,8 @@ When Beginning Memory Part One begins:
 	if the player is in Inside the Camera:
 		now the teacher is in Inside the Camera;
 		now the students are in Inside the Camera;
-		say "[if Beginning Memory Part One has happened] The scene shifts back. [otherwise] A scene fills the space. [end if] A classroom. A teacher. You're sitting in the back, another 50 students or so, spread around the auditorium. It's new and too clean. The blackboard's barely been written on. [line break] 'You two, you're together', the teacher said. And you were, apparently. You had never met him before, but there you were, suddenly, forced to work together. [if jacket is photographed] You remember seeing his jacket in class earlier in the day, thinking he'd be way too flashy to be your friend. Glad you were wrong. [end if]"
+		now the ceremony is nowhere;
+		say "[if Beginning Memory Part One has happened] The scene shifts back. [otherwise] A scene fills the space. [end if] A classroom. A [italic type]teacher[roman type]. You're sitting in the back, another 50 [italic type]students[roman type] or so, spread around the auditorium. It's new and too clean. The blackboard's barely been written on. [line break] 'You two, you're together', the teacher said. And you were, apparently. You had never met him before, but there you were, suddenly, forced to work together. [if jacket is photographed] You remember seeing his jacket in class earlier in the day, thinking he'd be way too flashy to be your friend. Glad you were wrong. [end if]"
 
 When Beginning Memory Part Two begins:
 	if the player is in Inside the Camera:
@@ -168,37 +175,15 @@ When Beginning Memory Part Two begins:
 		now the post-it notes are in Inside the Camera;
 		if shoerack is photographed:
 			now the shoe is in Inside the Camera;
-		say "The scene shifts. You're in a group room, walls covered in post-it notes. You're both staring at our monitors, working out some problem. As you always did. [line break]You had your fights, sure. It's hazy, now, to even remember what they were about. [if shoerack is photographed]You remember throwing a shoe, once. [end if]"
+		say "The scene shifts. You're in a group room, walls covered in [italic type]post-it notes[roman type]. You're both staring at our monitors, working out some problem. As you always did. [line break]You had your fights, sure. It's hazy, now, to even remember what they were about. [if shoerack is photographed]You remember throwing a [italic type]shoe[roman type], once. [end if]"
 
 When Beginning Memory Part Three begins:
 	if the player is in Inside the Camera:
 		now the post-it notes are nowhere;
 		if the shoe is in Inside the Camera:
 			now the shoe is nowhere;
-		say "The scene shifts. The scene shifts. Before you knew it, you graduated. Together. The ceremony wasn't the fun part, but you did it. [if project report is photographed] You were damn ragged after staying up all night, fixing commas. But hey, you were alive. [end if] "
-
-
-[Every turn during the Beginning Memory Part One:
-	if setting is beginning and player is in Inside the Camera:
-		now the teacher is in Inside the Camera;
-		now the students are in Inside the Camera;
-		say "A classroom. A teacher. You're sitting in the back, another 50 students or so, spread around the auditorium. It's new and too clean. The blackboard's barely been written on. [line break] 'You two, you're together', the teacher said. And you were, apparently. You had never met him before, but there you were, suddenly, forced to work together. [if jacket is photographed] You remember seeing his jacket in class earlier in the day, thinking he'd be way too flashy to be your friend. Glad you were wrong. [end if]"
-
-Every turn during the Beginning Memory Part Two:
-	if setting is beginning and player is in Inside the Camera:
-		now the teacher is nowhere;
-		now the students are nowhere;
-		now the post-it notes are in Inside the Camera;
-		if shoerack is photographed:
-			now the shoe is in Inside the Camera;
-		say "You're in a group room, walls covered in post-it notes. You're both staring at our monitors, working out some problem. As you always did. [line break]You had your fights, sure. It's hazy, now, to even remember what they were about. [if shoerack is photographed]You remember throwing a shoe, once. [end if]"
-
-Every turn during the Beginning Memory Part Three:
-	if setting is beginning and player is in Inside the Camera:
-		now the post-it notes are nowhere;
-		if the shoe is in Inside the Camera:
-			now the shoe is nowhere;
-		say "The scene shifts. Before you knew it, you graduated. Together. The ceremony wasn't the fun part, but you did it. [if project report is photographed] You were damn ragged after staying up all night, fixing commas. But hey, you were alive. [end if] "
+		now the ceremony is in Inside the Camera;
+		say "The scene shifts. The scene shifts. Before you knew it, you graduated. Together. The [italic type]ceremony[roman type] wasn't the fun part, but you did it. [if project report is photographed] You were damn ragged after staying up all night, fixing commas. But hey, you were alive. [end if]"
 
 ]
 Middle Memory Part One is a recurring scene. 
@@ -220,7 +205,7 @@ When Middle Memory Part One begins:
 	if setting is middle and player is in Inside the Camera:
 		now the restaurant is in Inside the Camera;
 		now the bar is nowhere;
-		say "[if Middle Memory Part One has happened] The scene shifts back. [otherwise] A scene fills the space. [end if] You go to catch a movie, some months after graduation. It was some sloppy action movie, you don't much remember the details of it, but it was a good time. [if book is photographed]At the restaurant later, you talk about books and games, quickly forgetting the movie. [end if]"
+		say "[if Middle Memory Part One has happened] The scene shifts back. [otherwise] A scene fills the space. [end if] You go to catch a movie, some months after graduation. It was some sloppy action movie, you don't much remember the details of it, but it was a good time. [if book is photographed]At the [italic type]restaurant[roman type] later, you talk about books and games, quickly forgetting the movie. [end if]"
 
 When Middle Memory Part Two begins:
 	if setting is middle and player is in Inside the Camera:
@@ -228,14 +213,14 @@ When Middle Memory Part Two begins:
 		now the work is in Inside the Camera;
 		if unmailed letter has been photographed:
 			now the text messages are in Inside the Camera;
-		say "The scene shifts. You're at work. Frank writes you a text message. You haven't responded in a few days. 'I've been busy' you write back. 'Sorry'. [if unmailed letter has been 	photographed]He says he's been trying to get in contact with you. You feel he's exaggerating how much he's been trying, really. There were a couple of text messages. [end if]A long time passes, and he replies. 'Ok. Hang out next weekend?'"
+		say "The scene shifts. You're at [italic type]work[roman type]. Frank writes you a text message. You haven't responded in a few days. 'I've been busy' you write back. 'Sorry'. [if unmailed letter has been photographed]He says he's been trying to get in contact with you. You feel he's exaggerating how much he's been trying, really. There were a couple of [italic type]text messages[roman type]. [end if]A long time passes, and he replies. 'Ok. Hang out next weekend?'"
 
 When Middle Memory Part Three begins:
 	if setting is middle and player is in Inside the Camera:
 		now the work is nowhere;
 		now the text messages are nowhere;
 		now the bar is in Inside the Camera;
-		say "The scene shifts. You're sitting in a bar. Catch-up time. It seems to happen less and less, these days. Him moving away didn't help either. [if set of knives have been photographed]He's busy talking about his latest vacation. He got a very fancy set of knives there, which was probably too expensive, he admits. But the[otherwise]The[end if] talking is still good, though. You can feel the warmth, even all this time later. What happened to end it like this?"
+		say "The scene shifts. You're sitting in a [italic type]bar[roman type]. Catch-up time. It seems to happen less and less, these days. Him moving away didn't help either. [if set of knives have been photographed]He's busy talking about his latest vacation. He got a very fancy set of knives there, which was probably too expensive, he admits. But the[otherwise]The[end if] talking is still good, though. You can feel the warmth, even all this time later. What happened to end it like this?"
 
 
 
@@ -255,23 +240,16 @@ End Memory Part Three ends happily when the time since End Memory Part Three beg
 End Memory Part Three ends sadly when the time since End Memory Part Three began is 3 minutes and the setting is not end. 
 
 When End Memory Part One begins:
-	say "[if End Memory Part One has happened] The scene shifts back. [otherwise] A scene fills the space.[end if] Frank went on vacation. wants to share the stories with you. [if potted plant is photographed] You sit there, and listen. And meanwhile, you're trying to figure out how to tell him you got fired. Instead, you make a bad joke on how his plants didn't like him being away from home for that long. [end if]He asks how you're doing. You say 'fine.' And leave it there. He doesn't look satisfied, but doesn't pry."
-
-[player gets fired!!]
+	now the plants are in Inside the Camera;
+	say "[if End Memory Part One has happened] The scene shifts back. [otherwise] A scene fills the space.[end if] Frank went on vacation. wants to share the stories with you. [if potted plant is photographed] You sit there, and listen. And meanwhile, you're trying to figure out how to tell him you got fired. Instead, you make a bad joke on how his [italic type]plants[roman type] didn't like him being away from home for that long. [end if]He asks how you're doing. You say 'fine.' And leave it there. He doesn't look satisfied, but doesn't pry."
 
 When End Memory Part Two begins:
-	say "The scene shifts. It's the fight. The Fight. The one you were bound to have eventually. 'I feel like you never talk anymore'. 'I don't know what's happening in your life'. Was that what happened? [if the diary has been photographed]He said those things, really. Yeah. Maybe he was right.[otherwise]You told him what you thought, and that was that.[end if] But there was nothing about this fight, at the time, that said that this was the end. It was just a dumb scrap. At the time."
+	now the plants are nowhere;
+	say "The scene shifts. It's the fight. The Fight. The one you were bound to have eventually. 'I feel like you never talk anymore'. 'I don't know what's happening in your life'. Was that what happened? [if the diary has been photographed]He said it all. You didn't listen at the time. Maybe he was right.[otherwise]You told him what you thought, and that was that.[end if] But there was nothing about this fight, at the time, that said that this was the end. It was just a dumb scrap. At the time."
 
 When End Memory Part Three begins:
-	say "The scene shifts. You sit alone, in your room, checking Facebook. You stumble across an update from Frank. He got a new job. He didn't even tell you. [if guitar has been photographed]In another update, he shares some guitar he'd been doing. Perhaps he played the guitar more than you thought. Maybe he picked it up after.[end if]"
+	say "The scene shifts. You sit alone, in your room, checking Facebook. You stumble across an update from Frank. He got a new job. He didn't even tell you. [if guitar has been photographed]In another update, he shares some guitar he'd been doing. Perhaps he played the guitar more than you thought. Maybe he picked it up after.[end if] You've been busy, you tell yourself. You can feel the excuses build up, even all this time after. They felt safe and real at the time."
 
-
-
-
-
-
-
-[oh a neat thing could be if a memory told you where he would hide a key, that you then find in the real world, to unlock his diary. or something.  ! ]
 
 
 
@@ -279,25 +257,6 @@ When End Memory Part Three begins:
 
 
 [
-3 SCENES
-
-Each scene has 3 steps - the steps are unlocked in the beginning but the descriptions are very vague/faint without the right items.
-So that's
-1:
-	1, 2, 3
-2:
-	1, 2, 3
-3:
-	1, 2, 3
-
-Nine Items to photograph.
-
-Each scene of a different point in the life. 
-meeting
-turnaround
-ending (last time I saw him)
-
-
 Objects:
 	shoerack
 	jacket
@@ -310,22 +269,7 @@ Objects:
 	potted plant (dead)
 	diary
 	an unplayed guitar
-
-
-
-other ideas:
-	diagram or flowchart or project structure or project report! "oh, he kept this too??"
-	dining table. some other friend or something? 
-
 ]
-
-
-
-[is the gut punch that it's really You who's been neglecting Frank...? !!!!!]
-
-
-
-
 
 [Photographing Rules]
 A thing can be either photographed or not photographed. Usually things are not photographed.
