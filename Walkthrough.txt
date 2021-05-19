@@ -1,0 +1,33 @@
+248 Group 2 Photography Game Walkthrough
+by Bjarke A. Larsen, Gan Shen and Zhihang Zhou.
+
+Photograph (using the “photograph” or “p” action) all relevant objects in the house. These are
+-	The shoerack (Entrance)
+-	The jacket (Entrance)
+-	The project report (Living Room)
+-	The book (Bedroom)
+-	The set of knives (Kitchen)
+-	The unmailed letter (Living Room)
+-	The potted plant (guest room)
+-	The diary (Bedroom)
+-	The guitar (Bedroom)
+
+You can also examine these objects to learn something about them in their current state.
+
+In the guest room, take the key. This will take the key from the potted plant, where it is hidden. Use the key to unlock the diary, then read the diary.
+
+Open the camera. Inside, there are three settings, with three stages to each, totalling 9 memories. In each memory, you can interact with some objects in the scene, to learn more about them. Otherwise, you can also wait to progress to the next stage, which will loop the 3 scenes inside that stage.
+To change setting, type “change setting”. This will loop through beginning, middle, and end.
+The objects to examine for more information are:
+-	Teacher (Beginning 1)
+-	Students (Beginning 1)
+-	Post-it notes (Beginning 2)
+-	Shoe (Beginning 2) (If shoerack is photographed)
+-	Ceremony (Beginning 3)
+-	Restaurant (Middle 1)
+-	Work (Middle 2)
+-	Text messages (Middle 2) (if unmailed letter is photographed)
+-	Bar (Middle 3)
+-	Plants (End 1)
+ 
+After every memory and object in the house has been examined, you can leave the house again by going south in the Entrance.
