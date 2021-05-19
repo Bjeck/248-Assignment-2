@@ -1,33 +1,5 @@
 "248 Assignment 2 Part 2 - Photography Game" by Bjarke
 
-[TO DO
- - DONE - introduction
- - DONE - room navigation guidance (descriptions like, to the east is the door to the kitchen)
- - DONE[?] working scene logic
- - DONE memory middle
- - DONE[MISSING examines] memory end
- - DONE - ending
- - DONE(empty) do something with the picture (both the empty one and the one in the camera)
- - DONE - you can take the setting lol
- - DONE (didn't seem to be a problem) should prolly have scene changes be greater than? just in case.
- - Have something to do with the picture you didn't take of Frank. Another clue? examining it twice?
-
-FROM PLAYTEST:
-DONE (sort of, realize there's no actual scene changing without memories in the first place) - use empty picture to signify where the player is in the 3 states (1, 2, 3)
-DONE - when examining camera, remind how to use it.
-DONE - make an instead of taking general rule.
- - have frank be inspectable in memories? 
-
-NICE TO HAVE
- - shelves and containers not saying what's in them until examined.
-DONE - highlighting nouns to interact with (esp. in memories)
- - more objects (fridge? that'd be another nice clue. Oven. Bike? Computer/phone charger? lamp? 
- - more sensory text in different places. More text i rooms especially. i think would be really nice.
- - maybe make the hint that Frank didn't want to interact with You anymore a little more clear. I guess the diary can be used for it but it's a bit hamfisted.
-]
-
-
-
 [SETUP]
 When play begins:
 	say "You close the door behind you, and put the key in your pocket. Here you are. Franks house. You used to be friends. You think perhaps you still are, but maybe sneaking into his house will be the end of that. But you haven't heard from him, even after writing every week for the past month, so now you're worried, too. You brought your camera, in case you need to remember the past. [line break] [italic type]Use the 'photograph' action, or 'p' to take pictures of objects in the house. You can then open the camera to view the memories that object triggers. [line break] You can leave at any time by walking back out the door.[roman type] [line break]"
@@ -184,9 +156,6 @@ The plants are scenery. The plants are nowhere. The description of the plants is
 The ceremony is scenery. The ceremony is nowhere. The description of the ceremony is "It's a blur, most of the other students are just washed out faces. Someone did a speech, and you remembering snickering about its hopefulness with Frank afterwards."
 
 
-[young frank - middle age frank - old frank?]
-
-
 
 [MEMORY SCENES]
 [these states are used to access the memories]
@@ -302,20 +271,6 @@ When End Memory Part Three begins:
 
 
 
-[Objects:
-	shoerack
-	jacket
-	picture [of who?]
-
-	a specific book
-	a souvenir. a set of knives.
-	an unmailed letter
-
-	potted plant (dead)
-	diary
-	an unplayed guitar
-]
-
 [Photographing Rules]
 A thing can be either photographed or not photographed. Usually things are not photographed.
 
@@ -348,8 +303,6 @@ Carry out photographing:
 		now end access is true;
 	if the guitar is photographed:
 		now end access is true;
-[	if the shoerack is photographed and the shelves are photographed:
-		move the memory of the university meetup to Inside the Camera.]
 
 
 Report photographing:
@@ -360,92 +313,3 @@ Report photographing:
 
 
 
-
-
-[
-[some every turn stuff - this will change]
-Every turn:
-	If the book is photographed:
-		say "The book screams."; [This is not final, this was just a test]
-[	If the memory of a shoerack is in Inside the Camera and the player is not in Inside the Camera:
-		say "the camera smells like shoeshine".
-	
-]]		
-
-[
-NOTES
-instead of touching object: move to X
-
-running multiple scenes simultaneously?
-
-
-You could have the camera space be a copy of the house that you populate by taking photography. While inside you can trigger a scene that is incomplete depending on which items are missing.
-
-score or something else just to keep track of how many memories the player has seen
-
-
-STILL considering the idea that memories happen on turns when teh player is not there, so when they go into the camera, something new might happen than last time. but what memory? ALL of them? 
-
-
-memories running on loop - multiple scenes.
-running on loop in REAL TIME??
-
-Linking like:
-Train Stop is a recurring scene. Train Wait is a recurring scene. 
-Train Wait begins when play begins. 
-Train Stop begins when Train Wait ends. 
-Train Wait begins when Train Stop ends. 
-
-
-
-
-items unlock parts of the memory? 
-
-]
-
-
-
-
-
-
-
-
-[OLD STUFFF]
-
-[
-
-[Two ideas for how to do memories]
-[1: as objects]
-A memory is a kind of thing. A memory is fixed in place. 
-
-[ this examine rule doesn't work for some reason. DOCUMENTATION IS WRONG??
-Before examining a memory, say: "Machinic sounds spin around you, as if the entire world is a giant clock. Then the memory forms in front of you."]
-
-A memory called memory of a shoerack is nowhere. The description of the memory of a shoerack is "'Oh, you still got those?' His voice is hollow, but warm. 'Yeah,' I shrug. I had those old boots for another two years. He puts his shoes on the rack and walks into the living room. "
-
-A memory called memory of the university meetup is nowhere. The description of the memory of the university meetup is "We always worked together well in university. Got assigned a random group in an early semester, but sometimes luck strikes true, no?"
-
-
-[2: as scenes]
-[
-Jacket Memory is a scene.
-
-Jacket Memory begins when the player is in Inside the Camera and the jacket is photographed.
-
-When Jacket Memory begins:
-	say "You remember when he bought the jacket. You were in London, visiting for the first time, and he got an idea that jackets were cheaper in Britain. He was wrong, but he insisted. You followed him, dutifully, shaking your head all the way. Although, you will admit, he got a pretty darn good jacket out of it."
-
-[could have this space be actually simulated, and have the friend be a real person and have you move around in the memory. would be a lot more writing but would be an actual simulation.]
-]
-
-Shelves Memory is a scene.
-
-Shelves Memory begins when the player is in Inside the Camera and the shelves are photographed.
-
-When Shelves Memory begins:
-	say "All the books. He kept all the books, the mad man. I sold mine after we were done."
-
-[it DOES start both scenes at the same time. HMM]
-
-
-]
