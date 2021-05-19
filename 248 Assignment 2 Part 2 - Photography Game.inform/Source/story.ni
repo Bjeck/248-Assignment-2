@@ -7,24 +7,32 @@
  - DONE memory middle
  - DONE[MISSING examines] memory end
  - DONE - ending
- - do something with the picture (both the empty one and the one in the camera)
+ - DONE(empty) do something with the picture (both the empty one and the one in the camera)
  - DONE - you can take the setting lol
- - should prolly have scene changes be greater than? just in case.
+ - DONE (didn't seem to be a problem) should prolly have scene changes be greater than? just in case.
+ - Have something to do with the picture you didn't take of Frank. Another clue? examining it twice?
+
+FROM PLAYTEST:
+DONE (sort of, realize there's no actual scene changing without memories in the first place) - use empty picture to signify where the player is in the 3 states (1, 2, 3)
+DONE - when examining camera, remind how to use it.
+DONE - make an instead of taking general rule.
+ - have frank be inspectable in memories? 
 
 NICE TO HAVE
  - shelves and containers not saying what's in them until examined.
- - highlighting nouns to interact with (esp. in memories)
-
+DONE - highlighting nouns to interact with (esp. in memories)
+ - more objects (fridge? that'd be another nice clue. Oven. Bike? Computer/phone charger? lamp? 
+ - more sensory text in different places. More text i rooms especially. i think would be really nice.
+ - maybe make the hint that Frank didn't want to interact with You anymore a little more clear. I guess the diary can be used for it but it's a bit hamfisted.
 ]
 
 
 
 [SETUP]
 When play begins:
-	say "You close the door behind you, and put the key in your pocket. Here you are. Franks house. You used to be friends. You think perhaps you still are, but maybe sneaking into his house will be the end of that. But you haven't heard from him, even after writing every week for the past month, so now you're worried, too. You brought your camera, in case you need to remember the past. [line break] 
-[italic type]Use the 'photograph' action, or 'p' to take pictures of objects in the house. You can then open the camera to view the memories that object triggers[roman type] [line break] "
+	say "You close the door behind you, and put the key in your pocket. Here you are. Franks house. You used to be friends. You think perhaps you still are, but maybe sneaking into his house will be the end of that. But you haven't heard from him, even after writing every week for the past month, so now you're worried, too. You brought your camera, in case you need to remember the past. [line break] [italic type]Use the 'photograph' action, or 'p' to take pictures of objects in the house. You can then open the camera to view the memories that object triggers. [line break] You can leave at any time by walking back out the door.[roman type] [line break]"
 
-The player is carrying a camera. "Your trusty camera."
+The player is carrying a camera. The description of the camera is "Your trusty camera. [italic type]You can take photographs with it. You can open it to view memories based on the photographs it contains[roman type]."
 Instead of dropping the camera:
 	say "You're not letting go. It feels almost sewn onto your fingers."
 
@@ -34,30 +42,37 @@ Instead of opening the camera:
 	if the player is not in Inside the Camera, move the player to Inside the Camera;
 	if the camera tutorial is false:
 		now camera tutorial is true;
-		say "[italic type]There are memories from each part of your life, the beginning, middle, and end. The setting governs which ones you are seeing at the moment. There are more than 1 memory in each part, though, so stick around (and examine elements of the memories) to see the others.".
+		say "[italic type]There are memories from each part of your life, the beginning, middle, and end. The setting governs which ones you are seeing at the moment. There are more than 1 memory in each part, though, so stick around (and examine elements of the memories) to see the others.[roman type][line break]".
 
 Instead of closing the camera:
 	if the player is in Inside the Camera, move the player to Entrance;
 
+Instead of taking:
+	if the player is not in Inside the camera:
+		say "You don't want to mess Frank's things. That's what the camera is for.";
+	otherwise:
+		say "You don't have any hands here. How would you do that?"
 
 
 [HOUSE]
 The Entrance is a room. "The Entrance. The shoerack is the same, albeit a bit more dusty than you remember it. [line break]Further north is a living room, and up the stairs is a hallway above."
-A shoerack is here. "One pair of shoes on the rack. Good as new."
+A shoerack is here. "A shoerack. Good as new, and empty."
 A jacket is here. "A jacket hangs on the coathanger. It's his, you'd recognize it anywhere."
 
 The Living Room is north of the Entrance. "The most prominent element in the living room his old dining table. Behind it are stacks of shelves. [line break]The east opens up to the kitchen. Back south is the entrance."
-[]A supporter called a dining table is here. The description of the table is "You used to remember the story of how he got it. It was something to do with a misunderstanding. And a mistyped phone number."
-[] A container called shelves is here. The description of the shelves is "Stacks of books. What looks like a project report. Opened letters. And one unmailed letter."
+A supporter called a dining table is here. The description of the table is "You used to remember the story of how he got it. It was something to do with a misunderstanding. And a mistyped phone number."
+A container called shelves is here. The description of the shelves is "Stacks of books. What looks like a project report. Opened letters. And one unmailed letter."
 An unmailed letter is in the shelves. The description of the unmailed letter is "You open the unmailed letter. It's... empty. But addressed to you. The date? 3 years ago. You sigh. Guess he tried."
-[]A picture is on the table. The description of the picture is "It is a picture of your friend, Frank. You don't remember taking this."
+A picture is on the table. The description of the picture is "It is a picture of your friend, Frank. You don't remember taking this."
 A project report is in the shelves. The description of the project report is "Our finals report. He really kept that. You can't even bear to flip through it. Too many things wrong with it."
 
 The Kitchen is east of the Living Room. "A kitchen, just big enough for another person to squeeze by when one is cooking. The kitchen counters are clean. [line break]Back west is the living room."
 The kitchen counter is scenery in the kitchen.
 A set of knives is on the kitchen counter. The description of the set of knives is "He got those knives on one of his trips. Malaysia? Cuba? You don't remember. But he liked them."
+A fridge is in the kitchen. "The fridge looks new." The description of the fridge is "You open it. Nothing fresh. No vegetables or moldy cheese. Some sauces, granola bars, things like that."
 
 The Hallway is up from the Entrance. "A short hallway, just big enough for two doors. One east, one west."
+A painting is here. "A painting is hanging on the wall." The description of the painting is "It's an art piece you don't know. A woman is sitting on a porch. Huh, not what you'd expect from him."
 
 The Bedroom is east from the hallway. "His bedroom. It's very sparse. [line break]Back west is the hallway."
 A book is here. "A book is on the nightstand." The description of the book is "some sci fi book you haven't heard of. But it's very much a thing he'd read."
@@ -71,10 +86,11 @@ Instead of examining the diary:
 		say "With slight trepidation, you open the diary. Why are you doing this? You flip through the pages. It's not super well kept. Entries every... third week or so? First entry is a couple years after school. You flip through some more, all the way to the last page. Dated... 2 months ago. [line break]
 [italic type]Excited about going to Cyprus tomorrow. Gonna be good to get away for a while. [roman type][line break]That's it. That's all it says. Shit."
 
-[]A guitar is here. "An unplayed guitar is in the corner." The description of the guitar is "Unplayed is harsh, perhaps. He played it once or twice. Always said he'd pick it up again. You don't remember seeing him ever do."
+A guitar is here. "An unplayed guitar is in the corner." The description of the guitar is "Unplayed is harsh, perhaps. He played it once or twice. Always said he'd pick it up again. You don't remember seeing him ever do."
 
 The Guest Room is west from the hallway. "It's the same guest bed he always had. It was always mildly uncomfortable. But you could never get yourself to tell him. [line break]Back east is the hallway."
-[]A potted plant is here. "A potted plant is on the windowsill. It's... pretty dead."
+A potted plant is here. "A potted plant is on the windowsill. It's... pretty dead."
+A computer charger is here. "A computer charger is plugged into the wall." The description of the computer charger is "Guess he didn't need that, wherever he is. It looks like a new Mac charger too, so you can't use it anyway. Since when did he get a Mac?"
 
 Instead of examining the potted plant:
 	say "Upon closer inspection, it is still dead.";
@@ -83,10 +99,46 @@ The brass key unlocks the diary. The brass key is inside the potted plant.
 Before taking the brass key, say "(rummaging your hands through the potted plant, what a thing to do) you find the key in the mouldy earth."
 
 
-
 There is a room called Inside the Camera. "Your vision is overtaken by dust and film. It smells like phosphor. Your body is weightless. As all good stories, this one has a beginning, a middle, and an end."
 An empty picture is here. The empty picture is fixed in place. "An empty picture floats in the space." [should I do something with this? Is this the end condition?]
 
+Instead of examining the empty picture:
+	if setting is beginning:
+		if beginning access is false:
+			say "It is not entirely empty, upon inspection. There are some objects. A shirt? A raincoat? And dirt? Footprints? And words, lots of words. They are all fading in and out, difficult to tell apart, yet distinct.";
+		otherwise:
+			if jacket is not photographed:
+				say "The empty picture shows an outline of some clothing. A shirt? A raincoat?";
+			otherwise if shoerack is not photographed:
+				say "It's faded, but there is a shelf, and some dirt.";
+			otherwise if project report is not photographed:
+				say "Documents, scattered on the table. Crossed out words, highlight markers.";
+			otherwise:
+				say "It is empty here.";
+	if setting is middle:
+		if middle access is false:
+			say "It is vague, but there are shapes in there. Distant and foggy. A book spine. Glints of sharp objects. And a pen and paper? They are all fading in and out, difficult to tell apart, yet distinct.";
+		otherwise:
+			if the book is not photographed:
+				say "The picture gives you a sense of descriptions and spaceships.";
+			otherwise if the set of knives is not photographed:
+				say "Several sharp objects, all together. You feel the prick just looking at it.";
+			otherwise if the unmailed letter is not photographed:
+				say "The picture gives you a sense of unfulfilled potential. Of something unfinished.";
+			otherwise:
+				say "It is empty here.";
+	if the setting is end:
+		if end access is false:
+			say "There are shapes in there, deformed and uncertain, almost mere coffee stains on print, but some shapes and colors make it through. Green. Memories written down. Strings vibrating. They are all fading in and out, difficult to tell apart, yet distinct.";
+		otherwise:
+			if the potted plant is not photographed:
+				say "A green spurt springs forth in the image, yet it doesn't seem healthy. An unhealthy green.";
+			otherwise if the diary is not photographed:
+				say "Memories locked tight behind lock and key.";
+			otherwise if the guitar is not photographed:
+				say "The picture is of music, despite how you struggle to understand how to photograph music. This picture has done it.";
+			otherwise:
+				say "It is empty."
 
 A setting is here. The setting is fixed in place. The setting is either beginning, middle, or end. It is beginning. "You feel as if you can change a setting, to change the time."
 Changing is an action applying to one visible thing. Understand "change [something]" as changing. 
@@ -119,12 +171,7 @@ Instead of going to the exit:
 [line break]You lock the door again and head down the street, camera in hand. [if end access is true or middle access is true or beginning access is true]At least you have some memories to cling to. [end if]"
 	
 
-
-[INSTEAD OF SCENES. if they don't work:
-	have a timer variable that counts down if setting hasn't changed and player hasn't left camera. After 3 ticks, change to next part. That should work?]
-
-
-[SCENE OBJECTS - these help fill in and ornament the scenes, but don't actually do anything.]
+[SCENE OBJECTS - these help fill in and ornament the scenes, gives the player something to inspect.]
 A teacher is scenery. The teacher is nowhere. The description of the teacher is "Clara Duvan, her name was. She was a good teacher. Got you through a lot."
 The students are scenery. The students are nowhere. The description of the students is "There were too many for you to know them all well. You had some friends in there though. So did Frank."
 The post-it notes are scenery. The post-it notes are nowhere. The description of the post-it notes are "They were his idea, mostly. You were never that organized. You tried to follow up, but your mind was always more chaotic than his."
@@ -134,25 +181,27 @@ The work is scenery. The work is nowhere. The description of the work is "You go
 The text messages are scenery. The text messages are nowhere. The description of the text messages is "In hindsight... maybe there were more. But he also seemed busy. Or at least, you thought he was."
 A bar is scenery. The bar is nowhere. The description of the bar is "Picked out by Frank, of course. A quiant little spot, close to our university. The prizes had gotten more expensive since we were students, but hey, now we had disposable income. For a while, at least."
 The plants are scenery. The plants are nowhere. The description of the plants is "He always did this. Bought plants and had them die on him. He was never any good at taking care of them. He did use the pots for hiding keys in, though, once."
-The ceremony i scenery. The ceremony is nowhere. The description of the ceremony is "It's a blur, most of the other students are just washed out faces. Someone did a speech, and you remembering snickering about its hopefulness with Frank afterwards."
+The ceremony is scenery. The ceremony is nowhere. The description of the ceremony is "It's a blur, most of the other students are just washed out faces. Someone did a speech, and you remembering snickering about its hopefulness with Frank afterwards."
+
+
+[young frank - middle age frank - old frank?]
+
 
 
 [MEMORY SCENES]
-[these are used to access the memories]
+[these states are used to access the memories]
 beginning access is a truth state that varies.
 middle access is a truth state that varies.
 end access is a truth state that varies.
 
 
-[OOK maybe we should do it with Event Table instead? like in Day One [§10.4] - but i need to test how that works, first (can you examine during them?)]
-
 Beginning Memory Part One is a recurring scene. 
 Beginning Memory Part Two is a recurring scene. 
 Beginning Memory Part Three is a recurring scene.
 
-Beginning Memory Part One begins when the player is in Inside the Camera and beginning access is true and the setting is beginning and Beginning Memory Part Two is not happening  and Beginning Memory Part Three is not happening. [First time, you only wait twice??]
+Beginning Memory Part One begins when the player is in Inside the Camera and beginning access is true and the setting is beginning and Beginning Memory Part Two is not happening  and Beginning Memory Part Three is not happening.
 Beginning Memory Part Two begins when Beginning Memory Part One ends happily.
-Beginning Memory Part Three begins when Beginning Memory Part Two ends happily. [these can only have one condition]
+Beginning Memory Part Three begins when Beginning Memory Part Two ends happily.
 Beginning Memory Part One begins when Beginning Memory Part Three ends happily.
 
 Beginning Memory Part One ends happily when the time since Beginning Memory Part One began is 3 minutes and the setting is beginning. 
@@ -185,7 +234,7 @@ When Beginning Memory Part Three begins:
 		now the ceremony is in Inside the Camera;
 		say "The scene shifts. The scene shifts. Before you knew it, you graduated. Together. The [italic type]ceremony[roman type] wasn't the fun part, but you did it. [if project report is photographed] You were damn ragged after staying up all night, fixing commas. But hey, you were alive. [end if]"
 
-]
+
 Middle Memory Part One is a recurring scene. 
 Middle Memory Part Two is a recurring scene. 
 Middle Memory Part Three is a recurring scene.
@@ -213,7 +262,7 @@ When Middle Memory Part Two begins:
 		now the work is in Inside the Camera;
 		if unmailed letter has been photographed:
 			now the text messages are in Inside the Camera;
-		say "The scene shifts. You're at [italic type]work[roman type]. Frank writes you a text message. You haven't responded in a few days. 'I've been busy' you write back. 'Sorry'. [if unmailed letter has been photographed]He says he's been trying to get in contact with you. You feel he's exaggerating how much he's been trying, really. There were a couple of [italic type]text messages[roman type]. [end if]A long time passes, and he replies. 'Ok. Hang out next weekend?'"
+		say "The scene shifts. You're at [italic type]work[roman type]. Frank writes you a text message. You haven't responded in a few days. 'I've been busy' you write back. 'Sorry'. [if unmailed letter has been photographed]He says he's been trying to get in contact with you. You feel he's exaggerating how much he's been trying, really. There were a couple of [italic type]text messages[roman type]. [end if]A long time passes, and he replies. 'Ok. Hang out next weekend?' You remember your calendar with dread."
 
 When Middle Memory Part Three begins:
 	if setting is middle and player is in Inside the Camera:
@@ -253,11 +302,7 @@ When End Memory Part Three begins:
 
 
 
-
-
-
-[
-Objects:
+[Objects:
 	shoerack
 	jacket
 	picture [of who?]
@@ -289,7 +334,7 @@ Carry out photographing:
 		now beginning access is true;
 	if the jacket is photographed:
 		now beginning access is true;
-	if the picture is photographed:
+	if the project report is photographed:
 		now beginning access is true;
 	if the book is photographed:
 		now middle access is true;
